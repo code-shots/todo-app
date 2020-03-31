@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Todo.</title>
+	<!-- STYLESHEET -->
+	<link rel="stylesheet" href="/css/style.css">
+	<!-- SCRIPTS -->
+	<script src="/js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.js"></script>
+</head>
+<body>
+	<!-- HEADER -->
+	<div class="header">
+		<div class="logo"></div>
+		<div class="cross">
+			<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+				<path d="M7.435 6.02l6.01-6.01 1.415 1.415-6.01 6.01 6.01 6.01-1.415 1.415-6.01-6.01-6.01 6.01L.01 13.445l6.01-6.01-6.01-6.01L1.425.01l6.01 6.01z" fill="#B8B8B8" fill-rule="nonzero"/>
+			</svg>
+		</div>
+	</div>
+
+	<!-- LIST TITLE -->
+	<div class="list-info-wrapper">
+		<div class="title-wrapper">
+			<div class="progress-circle"></div>
+			<h1>My Tasks</h1>
+		</div>
+		<h3 class="task-count">2 of 7 tasks</h3>
+		<div class="seperator"></div>
+	</div>
+
+	<!-- LIST -->
+	<div class="list-wrapper">
+		<!-- BUY MILK -->
+		<div class="task-date-wrapper">
+			<div class="checkbox-task-wrapper">
+					<div class="checkbox"></div>
+					<h2 class="task">Buy milk</h2>
+			</div>
+			<div class="date-wrapper">
+				<h3 class="date">Mon, Apr 30</h3>
+			</div>
+		</div>
+
+		<!-- PLAN WEEKEND -->
+		<div class="task-wrapper">
+			<div class="checkbox-task-wrapper">
+					<div class="checkbox"></div>
+					<h2 class="task">Plan weekend outing</h2>
+			</div>
+		</div>
+
+		<!-- PUBLISH BLOGPOST -->
+		<div class="task-date-wrapper done">
+			<div class="checkbox-task-wrapper">
+					<div class="checkbox"></div>
+					<h2 class="task">Publish Friday blog post</h2>
+			</div>
+			<div class="date-wrapper">
+				<h3 class="date">Mon, Apr 30</h3>
+			</div>
+		</div>
+
+		<!-- RUN 3 MILES -->
+		<div class="task-wrapper">
+			<div class="checkbox-task-wrapper">
+					<div class="checkbox"></div>
+					<h2 class="task">Run 3 miles</h2>
+			</div>
+		</div>
+
+		<!-- WASH CLOTHES -->
+		<div class="task-wrapper done">
+			<div class="checkbox-task-wrapper">
+					<div class="checkbox"></div>
+					<h2 class="task">Wash clothes</h2>
+			</div>
+		</div>
+
+		<!-- UPDATE DATABASE -->
+		<div class="task-wrapper">
+			<div class="checkbox-task-wrapper">
+					<div class="checkbox"></div>
+					<h2 class="task">Update database</h2>
+			</div>
+		</div>
+	</div>
+
+	<!-- MODAL -->
+	<div class="modal">
+		<div class="modal-content">
+			<div class="close">
+				<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+					<path d="M7.435 6.02l6.01-6.01 1.415 1.415-6.01 6.01 6.01 6.01-1.415 1.415-6.01-6.01-6.01 6.01L.01 13.445l6.01-6.01-6.01-6.01L1.425.01l6.01 6.01z" fill="#B8B8B8" fill-rule="nonzero"/>
+				</svg>
+			</div>
+			<div class="checkbox"></div>
+			<input class="task-input" type="text" placeholder="Enter new task">
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<div class="footer">
+		<div class="add-btn">
+			<img src="/img/plus.png" alt="Plus">
+		</div>
+	</div>
+</body>
+</html>

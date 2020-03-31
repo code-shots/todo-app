@@ -1,0 +1,181 @@
+// VARIABLES
+$red: #CC3939
+$grey: #B8B8B8
+$black: #383838
+
+// GLOBAL STYLES
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	font-family: "Futura"
+	font-weight: bold
+	color: $black
+
+.flex-center
+	display: flex
+	justify-content: center
+	align-items: center
+
+body
+	height: 100vh
+	width: 100vw
+	@extend .flex-center
+	flex-direction: column
+
+// HEADER & LOGO
+.header
+	width: 100vw
+	height: 130px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 0 12%
+
+.logo
+	height: 18px
+	width: 18px
+	background-color: $black
+	transform: rotate(45deg)
+
+// CHECKBOX & TASK
+.checkbox-task-wrapper
+	display: flex
+	align-items: center
+
+.checkbox
+	height: 13px
+	width: 13px
+	border: 2px solid #D4D4D4
+	border-radius: 4px
+	margin-right: 20px
+
+.task
+	font-weight: normal
+	font-size: 15px
+
+.date
+	font-weight: normal
+	font-size: 11px
+	color: $grey
+
+// LIST INFO WRAPPER
+.list-info-wrapper
+	padding-left: 45px
+	flex: 1
+
+.title-wrapper
+	display: flex
+	align-items: center
+
+	h1
+		font-size: 27px
+		color: $black
+
+.task-count
+	font-size: 11px
+	color: $grey
+	margin: 10px 0 25px 35px
+
+.progress-circle
+	height: 16px
+	width: 16px
+	border: 2px solid $red
+	border-radius: 100px
+	margin-right: 18px
+
+.seperator
+	height: 1px
+	width: 295px
+	background-color: $grey
+	margin: 0 0 0 35px
+
+// TASKS
+.list-wrapper
+	flex: 4.5
+	width: 100vw
+	margin-top: 15px
+	overflow-y: scroll
+
+.task-date-wrapper
+	padding-left: 45px
+
+.task-wrapper
+	padding: 15px 0 15px 45px
+
+.date
+	margin: 0 0 0 34px
+
+.done
+	background: linear-gradient(to right, #F2F2F6, #FFFFFF)
+	padding: 15px 0 15px 45px
+
+// FOOTER
+.footer
+	height: 90px
+	width: 100vw
+	position: absolute
+	bottom: 0
+	display: flex
+	justify-content: flex-end
+	align-items: flex-start
+	padding-right: 10%
+
+.add-btn
+	height: 50px
+	width: 50px
+	background-color: $red
+	@extend .flex-center
+	border-radius: 7px
+	font-size: 20px
+	color: #FFF
+	cursor: pointer
+	-webkit-tap-highlight-color: transparent
+
+	img
+		height: 13px
+
+// MODAL
+.modal
+	display: none
+	width: 100vw
+	height: 100vh
+	position: absolute
+	z-index: 1
+	left: 0
+	top: 0
+	background-color: rgba(#000, 0.5)
+	@extend .flex-center
+
+.modal-content
+	background: #FFF
+	border-radius: 7px
+	padding: 50px
+	position: relative
+	display: flex
+	align-items: center
+
+	.checkbox
+		margin-top: 10px
+
+.close
+	position: absolute
+	top: 20px
+	right: 20px
+
+	svg
+		transform: sclae(0.5)
+
+// MODAL INPUT
+.task-input
+	outline: none
+	border: none
+	border-bottom: none
+	padding: 10px 10px 0 0
+	font-weight: 200
+	font-size: 15px
+
+	&::placeholder
+		font-size: 15px
+		font-weight: 200
+		color: $grey
